@@ -25,6 +25,17 @@ body {
     color: white;
 }
 
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.experience-column {
+    flex: 1;
+    min-width: 300px;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -244,13 +255,9 @@ span {
     41%, 60% {
         content: "Web Designer";
     }
-    61%, 80% {
-        content: "Data Analyst";
+    
     }
-    81%, 100% {
-        content: "Network Specialist";
-    }
-}
+
 
 @media (max-width: 1000px) {
     .home {
@@ -418,91 +425,88 @@ footer {
 .experience-item p {
     font-size: 1.4rem;
 }
+/* CONTACT SECTION CLEAN UI */
 
 .contact {
-    padding: 5rem 9%;
+    max-width: 900px;
+    margin: 120px auto 40px;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
     text-align: center;
-    background-color: #161616; /* Dark background */
-    color: white;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh;
 }
 
 .contact h1 {
-    font-size: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 25px;
+    font-size: 2.4rem;
+    color: #fff;
 }
 
-.contact-form-container {
-    background-color: rgba(183, 75, 75, 0.9);
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    margin: 2rem auto;
-    width: 100%; /* Set the container width to 100% */
-    max-width: 500px; 
-    
-}
-
+/* FORM */
 form {
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Space between form elements */
-    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
 }
 
-label {
-    font-size: 1.6rem;
-    text-align: left;
+form input, 
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
     color: white;
+    font-size: 1rem;
 }
 
-input, textarea {
-    width: 60%; /* Full width for inputs */
-    padding: 2rem; /* Increased padding for larger input areas */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: white;
-    font-size: 1.6rem; /* Adjust font size */
-    transition: border 0.3s;
+form input:focus, 
+form textarea:focus {
+    outline: none;
+    border-color: rgba(236, 74, 74, 0.8) ;
+    background: rgba(0,0,0,0.6);
 }
 
-input:focus, textarea:focus {
-    border: 1px solid #b74b4b; 
-}
-
+/* BUTTON */
 .btn {
-    padding: 1rem 3rem;
-    background-color: black;
-    color: #b74b4b;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.6rem;
+    background: rgba(236, 74, 74, 0.8) ;
+    color: #fff;
+    padding: 12px;
+    border-radius: 12px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: #b74b4b;
-    color: black;
+    background:rgba(236, 74, 74, 0.8) ;
 }
 
+/* CONTACT INFO */
 .contact-info {
-    margin-top: 2rem;
+    margin-top: 20px;
 }
 
 .contact-info h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
 .contact-info p {
-    font-size: 1.4rem;
+    color: #eee;
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: rgba(236, 74, 74, 0.8);
 }
 
 .contact-info a {
-    color: #b74b4b;
+    color: rgba(236, 74, 74, 0.8) ;
     text-decoration: none;
 }
 
